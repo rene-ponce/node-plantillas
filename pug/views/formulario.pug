@@ -1,0 +1,13 @@
+h1(style="color: blue") Ingrese datos
+form(action="/productos", method="post")
+  .form-group
+    label Titulo
+    input(type="text" name="title").form-control
+  .form-group
+    label Precio
+    input(type="text" name="price").form-control
+  .form-group
+    label Foto
+    input(type="text" name="thumbnail").form-control
+  button(type="submit").btn.btn-success.mt-3.mb-5 Enviar
+  a(href="/productos" style="margin-left: 5px").btn.btn-info.mt-3.mb-5 Volver a listado

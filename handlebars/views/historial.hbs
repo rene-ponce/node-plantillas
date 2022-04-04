@@ -1,0 +1,19 @@
+{{#if products.length}}
+<table class="table table-dark">
+  <tr>
+    <td>Titulo</td>
+    <td>Precio</td>
+    <td>Imagen</td>
+  </tr>
+  {{#each products}}
+  <tr>
+    <td>{{this.title}}</td>
+    <td>{{this.price}}</td>
+    <td><img src="{{this.thumbnail}}" alt="{{this.title}}" /></td>
+  </tr>
+  {{/each}}
+</table>
+{{else}}
+<h3 class="alert alert-danger">no se encontraron datos</h1>
+{{/if}}
+<a href="/productos/registro" class="btn btn-info">Registrar producto</a>
